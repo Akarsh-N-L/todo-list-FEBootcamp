@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading-container">
+        <span class="heading">#todo</span>
+      </div>
+      <div class="menu-container">
+        <div class="menu">
+          <span class="menu-item" id="menu-item-all" onclick="">All</span>
+          <span class="menu-item" id="menu-item-active">Active</span>
+          <span class="menu-item" id="menu-item-completed">Completed</span>
+        </div>
+      </div>
+      <div class="hr-container">
+        <hr />
+      </div>
+      <div class="todo-form" id="todo-form">
+        <form id="form">
+          <div class="todo-form-container">
+            <div class="todo-form-elements">
+              <input
+                type="text"
+                class="todo-form-inp"
+                placeholder="add details"
+                id="add-item-input"
+              />
+              <button type="submit" class="todo-form-btn">Add</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <item-list></item-list>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
